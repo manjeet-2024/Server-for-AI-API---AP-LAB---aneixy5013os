@@ -35,6 +35,7 @@ app.post("/api/gemini/prompt/send", async (req, res) => {
     });
 
     const data = await fetchResponse.json();
+    console.log(data)
 
     return res.status(200).json({ response: data });
 
